@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/calculadora.css">
+</head>
+<body>
+<header>
+    <img src="imagem/calculadora.png" alt="Ícone de emergia" class="logo-escrita">
+    <h1>Análise de Emergia</h1>
+</header>
+
+<div class="menu-container">
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav id="nav-menu">
+        <ul>
+            <li><a href="Início.html">Início</a></li>
+            <li><a href="Emergia.html">Emergia</a></li>
+            <li><a href="diagrama_sistemicos.html">Diagrama Sistêmicos</a></li>
+            <li><a href="calculo_emergia.html">Cálculo de Emergia</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="container">
+    <div class="input-section">
+        <h2>Entrada de dados</h2>
+        <label for="aco">Consumo de Aço (toneladas/mês):</label>
+        <input type="number" id="aco" value="500">
+        
+        <label for="cobre">Consumo de Cobre (kg/mês):</label>
+        <input type="number" id="cobre" value="15000">
+        
+        <label for="aluminio">Consumo de Alumínio (toneladas/mês):</label>
+        <input type="number" id="aluminio" value="450">
+        
+        <button id="calcular">Calcular Emergia</button>
+    </div>
+
+    <div class="result-section">
+        <h2>Relatório de resultados</h2>
+        <p id="resultadoAco">Emergia do Consumo de Aço: 0 seJ</p>
+        <p id="resultadoCobre">Emergia do Consumo de Cobre: 0 seJ</p>
+        <p id="resultadoAluminio">Emergia do Consumo de Alumínio: 0 seJ</p>
+        <h3 id="resultadoTotal">Emergia Total Consumida: 0 seJ</h3>
+    </div>
+
+    <div class="chart-section">
+        <h2>Distribuição de Emergia</h2>
+        <canvas id="emergiaChart" width="400" height="400"></canvas>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="JS/calculadora.js"></script>
+<script src="JS/menu.js"></script>
+</body>
+</html>

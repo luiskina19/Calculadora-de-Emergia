@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergia</title>
+    <link rel="stylesheet" href="css/emergia.css">
+</head>
+<body>
+  <header>
+<header>
+    <img src="imagem/icone_raio (2).png" alt="Ícone de emergia" class="logo-escrita">
+    <h1>Análise de Emergia</h1>
+</header>
+  </header>
+
+  <div class="menu-container">
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <nav id="nav-menu">
+          <ul>
+              <li><a href="Início.html">Início</a></li>
+              <li><a href="Emergia.html">Emergia</a></li>
+              <li><a href="diagrama_sistemicos.html">Diagrama Sistemicos</a></li>
+              <li><a href="calculo_emergia.html">Calculadora de Emergia</a></li>
+          </ul>
+      </nav>
+  </div>
+  <div class="img">
+  <img src="imagem/emergiaimg.jpg" alt="emergia">
+</div>
+  <main>
+     <section class="sobre">
+        <h2>Conceito de Emergia</h2>
+  <p>Emergia é definida como a medição da quantidade de energia gasta por um ecossistema para a realização ou transformação de um produto. 
+    Essa metodologia, elaborada pelo ecologista e cientista americano Howard Thomas Odum (1924-2002), na década de 60, pode ser usada como um indicador de sustentabilidade, levando em consideração a energia utilizada para a produção de um serviço (os materiais gastos, tempo, esforço dos envolvidos, entre outros fatores) para avaliar a viabilidade da produção. 
+    Essa abordagem é fundamental para entender as interações entre os sistemas naturais e humanos, especialmente em contextos que tratam de danos ao meio ambiente e iniciativas de restauração ecológica.
+    Esse conceito vinha sendo construído desde a década de 50, quando Odum, após realizar análises de fluxos de energia em diversos ecossistemas, passou a sugerir um método de conversão de energia, em uma medida única, que devesse ser levado em consideração ao calcular o gasto energético em sistemas movidos a mais de um tipo de energia.
+    Anteriormente conhecido como "embodied energy" (ou energia incorporada), o termo "emergia" foi cunhado em 1983, como uma contração do termo anteriormente usado, por conta de o mesmo fazer parte de outros ramos de pesquisa.
+    A unidade de medida comumente utilizada em cálculos de emergia é o joule emergético solar (emjoule solar ou seJ). 
+    A emergia de um produto pode ser calculada por meio do resultado da divisão da emergia pelo seu valor energético (seJ/J), o que é chamado de transformidade, ou pelo seu peso em gramas (seJ/g), o que é chamado de “emergia específica”.
+<br>
+<br>
+<strong>Emergia = Fluxo(em unidades naturais) x Transformidade(seJ/unidade)</strong>
+</p>                                                                                                                                              
+<h2>Ánalise de Emergia</h2>
+<p>A pesquisa analisada, contada em detalhes no artigo “Emergy evaluation using the calculation software SCALE: Case study, added value and potential improvements”, de Marvuglia et. al (2013), se concentra na aplicação de um software dedicado à avaliação de emergia em estações de tratamento de água. Ela compara três abordagens diferentes: o método tradicional, que considera todos os recursos exigidos para o funcionamento de uma atividade, incluindo recursos naturais e insumos humanos; o método de demanda de energia solar, que aplica fatores de energia solar, mas não adota rigorosamente as normativas da álgebra de emergia; e um método mais avançado que implementa a álgebra de emergia em conjuntos de dados de inventário de ciclo de vida, utilizando um banco de dados abrangente. Esta última abordagem é distinta por oferecer resultados mais precisos e detalhados sobre insumos humanos, embora comporte limitações, como a exclusão de insumos não tecnosféricos, incluindo trabalho humano e serviços ecossistêmicos.
+A análise numérica apresentada nesta pesquisa compara os valores unitários de emergia para insumos tecnosféricos em cada um dos métodos avaliados, mostrando que a abordagem mais avançada frequentemente resulta em valores superiores aos do método tradicional. Além do mais, avalia a importância relativa de cada insumo na produção de água potável, sublinhando que a eletricidade é um insumo fundamental. Apesar das restrições, como depender da qualidade do banco de dados, o trabalho ressalta a relevância da avaliação de emergia para compreender o impacto ambiental das ações humanas e para incentivar práticas mais sustentáveis.
+Um ponto relevante é a introdução de uma plataforma de simulação de código aberto, criada para resolver restrições na ecologia de sistemas. Esta aplicação torna viável a representação das interações entre atividades humanas e o meio ambiente, facilitando a ilustração de fenômenos tanto ecológicos quanto econômicos. As pessoas têm a capacidade de compartilhar modelos online, transformar diagramas de sistemas energéticos em equações diferenciais e realizar cálculos de emergia e transformidade. A abordagem utilizada na plataforma consiste em definir limites temporais e espaciais, escolher parâmetros importantes e analisar os recursos necessários para alcançar resultados. O arranjo das informações na plataforma ocorre em forma de grafo, onde os nós representam produtos e as conexões ilustram os fluxos de energia que os interligam. Os dados reunidos são armazenados de maneira que possam ser acessados por outros sistemas, possibilitando a conexão com ferramentas para a análise do ciclo de vida. Esta plataforma também se mostra valiosa para explorar a distribuição de emergias em redes complexas, permitindo que os usuários insiram informações sobre fontes autônomas de emergia e avaliem como vários processos podem influenciar a emergia total de um sistema.
+Os resultados sinalizam que o sistema possui um grande potencial para restaurar a diversidade biológica e melhorar a qualidade da água, ao mesmo tempo que proporciona vantagens econômicas para as comunidades locais. Isso ressalta a relevância de integrar a avaliação de emergia nas práticas de restauração ecológica, com o objetivo de garantir a sustentabilidade e a eficácia dos projetos.</p>
+</section>
+</main>
+<script src="JS/menu.js"></script>

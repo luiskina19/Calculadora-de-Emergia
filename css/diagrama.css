@@ -1,0 +1,105 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+    align-items: center;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(to right, #004d40, #26a69a);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header .logo-escrita {
+    width: 100px;
+    margin-bottom: 10px;
+    align-items: center;
+    border-radius: 50%;
+}
+
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Menu */
+.menu-container {
+    background-color: #00332f;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+   margin-top: auto;
+   margin-bottom: auto;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #a7ffeb;
+    color: #004d40;
+    transform: scale(1.05);
+}
+
+/* Menu hambúrguer */
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.sobre h2 {
+    font-size: 2rem;
+    color:black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto 30px;
+    color: black;
+    text-align: justify;
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: auto;
+}
+
